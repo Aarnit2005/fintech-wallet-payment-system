@@ -1,0 +1,294 @@
+.send-message {
+  margin-top: 25px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.send-message.error {
+  border: 1px solid #e1caca;
+  background: #faf3f3;
+  color: #984d4d;
+}
+
+.send-message.success {
+  border: 1px solid #cbdcca;
+  background: #f2f8f3;
+  color: #4c7655;
+}
+
+.send-money-layout {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.send-money-card {
+  min-height: 430px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #111318;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(17, 19, 24, 0.15);
+}
+
+.send-money-card::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #292d34;
+  filter: blur(80px);
+  right: -150px;
+  bottom: -160px;
+}
+
+.send-card-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  color: #a0a5ad;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.send-card-label {
+  position: relative;
+  z-index: 2;
+  margin-top: 105px;
+  color: #858b94;
+  font-size: 11px;
+}
+
+.send-card-balance {
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.send-card-footer {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 28px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #292c32;
+  padding-top: 18px;
+}
+
+.send-card-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.send-card-footer span {
+  color: #686e77;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.send-card-footer strong {
+  color: #c6c9ce;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.send-form-card {
+  padding: 30px;
+  border: 1px solid #e0e3e7;
+  border-radius: 20px;
+  background: white;
+}
+
+.send-form-heading h2 {
+  margin-top: 5px;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+.send-form-heading > p:last-child {
+  margin-top: 8px;
+  color: #858b94;
+  font-size: 11px;
+}
+
+.send-form-card form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.send-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.send-form-group label {
+  color: #33373d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.send-form-group input {
+  width: 100%;
+  height: 53px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border: 1px solid #dfe2e6;
+  border-radius: 10px;
+  outline: none;
+  background: #fafbfc;
+  color: #111318;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.send-form-group input:focus {
+  border-color: #111318;
+  background: white;
+}
+
+.send-form-group > span {
+  color: #969ba3;
+  font-size: 9px;
+}
+
+.send-amount-input {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe2e6;
+  border-radius: 10px;
+  background: #fafbfc;
+  overflow: hidden;
+}
+
+.send-amount-input:focus-within {
+  border-color: #111318;
+  background: white;
+}
+
+.send-amount-input > span {
+  padding-left: 16px;
+  color: #737982;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.send-amount-input input {
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.send-amount-input input:focus {
+  border: none;
+  background: transparent;
+}
+
+.send-submit-button {
+  height: 52px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 10px;
+  background: #111318;
+  color: white;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.send-submit-button:hover {
+  background: #292d34;
+}
+
+.send-submit-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.send-info-grid {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.send-info-card {
+  min-height: 170px;
+  padding: 24px;
+  border: 1px solid #e1e3e7;
+  border-radius: 15px;
+  background: white;
+}
+
+.send-info-card > span {
+  color: #a0a5ac;
+  font-family: monospace;
+  font-size: 10px;
+}
+
+.send-info-card h3 {
+  margin-top: 27px;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.send-info-card p {
+  margin-top: 9px;
+  color: #858b94;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+
+  .send-money-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .send-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .send-money-card {
+    min-height: 330px;
+  }
+
+  .send-card-label {
+    margin-top: 75px;
+  }
+
+  .send-card-balance {
+    font-size: 32px;
+  }
+
+  .send-form-card {
+    padding: 22px;
+  }
+}
